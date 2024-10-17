@@ -1,0 +1,29 @@
+/* <div className={styles.stack}>の
+直下の子要素(1つ目以外)の間隔を上マージンで1.5emに指定 */
+.stack > * + * {
+  margin-top: var(--stack-space, 1.5em);
+}
+
+/* 見出しh2,h3の上間隔は大きくなるように指定 */
+.stack h2,
+.stack h3 {
+  --stack-space: 1.7em;
+}
+
+/* 見出しh2,h3の下間隔は小さくなるように指定 */
+.stack h2 + *,
+.stack h3 + * {
+  --stack-space:  0.8em;
+}
+
+.stack p {
+  line-height: 1.8;
+}
+
+/* ulは本文中で使う可能性があるので、
+グローバルスタイルでリセットしたスタイルを
+ブラウザ標準スタイルに戻すように指定 */
+.stack ul {
+  padding: revert;
+  list-style: revert;
+}

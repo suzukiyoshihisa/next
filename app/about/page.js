@@ -1,6 +1,7 @@
 import Hero from "components/layout/hero/hero";
 import Container from "components/layout/container/container";
 import PostBody from "components/layout/post-body/post-body";
+import Social from "components/ui/social/social";
 
 export default function About() {
   return (
@@ -31,6 +32,7 @@ export default function About() {
           私たちは柔軟に対応し、最適なソリューションを提供する努力を惜しまないことをお約束します。
         </p>
       </PostBody>
+      <Social/>
     </Container>
   );
 }

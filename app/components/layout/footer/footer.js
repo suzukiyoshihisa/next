@@ -1,4 +1,4 @@
-import Logo from "components/ui/logo";
+import Logo from "components/ui/logo/logo";
 import Container from "components/layout/container/container";
 import styles from "components/layout/footer/footer.module.css";
 

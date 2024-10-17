@@ -1,0 +1,73 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* カラー */
+  --white: #ffffff;
+  --black: #222222;
+  --gray-10: #eeeeee;
+  --gray-20: #aaaaaa;
+  --gray-50: #707070;
+  --gray-75: #414141;
+  --accent: #0d87e0;
+
+  /* タイポグラフィ */
+  --body: 16px;
+  --display: 16px;
+  --heading1: 34px;
+  --heading2: 30px;
+  --heading3: 18px;
+  --small-heading2: 15px;
+  --small-heading3: 14px;
+
+  /* スペース(余白・間隔) */
+  --space-xs: clamp(1.25rem, 1rem + 0.98vw, 1.875rem); /* 20-30px */
+  --space-sm: clac(var(--space-xs) * 1.5); /* 30-45px */
+  --space-md: clac(var(--space-xs) * 2); /* 40-60px */
+  --space-lg: clac(var(--space-xs) * 3); /* 60-90px */
+  --space-xl: clac(var(--space-xs) * 4); /* 80-120px */
+  --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem); /* 20-60px */
+
+  /* ブレイクポイント */
+  --breakpoint-sm: 475px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

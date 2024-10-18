@@ -6,13 +6,13 @@
 }
 
 /* 横並び(基本系) */
-.sideByside {
+.sideBySide {
 	display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 768px) {
-  .sideByside {
+  .sideBySide {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -20,7 +20,7 @@
 
 /* 横並び(中央揃え) */
 .sideBySideCenter {
-  composes: sideByside;
+  composes: sideBySide;
   align-items: center;
   text-align: center;
 }

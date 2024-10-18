@@ -10,7 +10,16 @@ export default function About() {
     <Container>
       <Hero title="About" description="Learn more about our organization."/>
       <figure>
-        <Image src="/about.jpg" alt="About" layout="responsive" width={1240} height={400}/>
+        <Image
+          src="/about.jpg"
+          alt="About"
+          layout="responsive"
+          width={1240}
+          height={400}
+          priority
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkAAIAAAoAAv/lPAAAAABJRU5ErkJggg=="
+        />
       </figure>
         <TwoColumn>
           <TwoColumnMain>

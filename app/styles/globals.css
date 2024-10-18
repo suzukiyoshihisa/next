@@ -66,6 +66,23 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: var(--heading1);
+}
+
+h2 {
+  font-size: var(--heading2);
+}
+
+h3 {
+  font-size: var(--heading3);
+}
+
+/* next/image */
+span > img {
+  transition: 0.2s;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

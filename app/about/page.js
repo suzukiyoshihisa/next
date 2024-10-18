@@ -3,11 +3,15 @@ import Container from "components/layout/container/container";
 import PostBody from "components/layout/post-body/post-body";
 import Social from "components/ui/social/social";
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/layout/two-column/two-column";
+import Image from "next/image";
 
 export default function About() {
   return (
     <Container>
       <Hero title="About" description="Learn more about our organization."/>
+      <figure>
+        <Image src="/about.jpg" alt="About" layout="responsive" width={1240} height={400}/>
+      </figure>
         <TwoColumn>
           <TwoColumnMain>
             <PostBody>

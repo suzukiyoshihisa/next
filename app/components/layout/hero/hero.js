@@ -1,5 +1,5 @@
 import styles from 'components/layout/hero/hero.module.css';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 export default function Hero({title, description, imageOn=true}) {
   return (
@@ -10,7 +10,7 @@ export default function Hero({title, description, imageOn=true}) {
       </div>
       { imageOn && 
         <figure>
-          <Image src="/logo.png" alt="" layout='responsive' width={1240} height={400} />
+          <Image src="/logo.png" alt="" layout='responsive' priority width={1240} height={900} />
         </figure>
       }
     </div>

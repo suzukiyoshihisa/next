@@ -3,7 +3,7 @@ import Container from "components/layout/container/container";
 import PostBody from "components/layout/post-body/post-body";
 import Social from "components/ui/social/social";
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/layout/two-column/two-column";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function About() {
   return (
@@ -49,7 +49,9 @@ export default function About() {
             </PostBody>
           </TwoColumnMain>
           <TwoColumnSidebar>
+            <h3 className="styles.heading">Contact Us</h3>
             <Social/>
+            <address>mid@mid.mail.address</address>
           </TwoColumnSidebar>
         </TwoColumn>
     </Container>

@@ -1,6 +1,7 @@
 import Logo from "components/ui/logo/logo";
 import Container from "components/layout/container/container";
 import styles from "components/layout/footer/footer.module.css";
+import Social from "components/ui/social/social";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
       <Container>
         <div className={styles.flexContainer}>
           <Logo />
-          [ソーシャル]
+          <Social />
         </div>
       </Container>
     </footer>

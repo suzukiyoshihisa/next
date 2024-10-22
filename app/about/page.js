@@ -5,6 +5,8 @@ import Social from "components/ui/social/social";
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/layout/two-column/two-column";
 import Image from "next/legacy/image";
 
+export const metadata = { title: "about" };
+
 export default function About() {
   return (
     <Container>
